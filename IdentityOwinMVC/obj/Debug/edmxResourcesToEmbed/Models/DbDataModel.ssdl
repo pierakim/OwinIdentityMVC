@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DbDataModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="DbDataModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="nchar" Nullable="false" MaxLength="5" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ContactName" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="ContactTitle" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="Address" Type="nvarchar" Nullable="true" MaxLength="60" />
+    <Property Name="City" Type="nvarchar" Nullable="true" MaxLength="15" />
+    <Property Name="Region" Type="nvarchar" Nullable="true" MaxLength="15" />
+    <Property Name="PostalCode" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="Country" Type="nvarchar" Nullable="true" MaxLength="15" />
+    <Property Name="Phone" Type="nvarchar" Nullable="true" MaxLength="24" />
+    <Property Name="Fax" Type="nvarchar" Nullable="true" MaxLength="24" />
+  </EntityType>
+</Schema>

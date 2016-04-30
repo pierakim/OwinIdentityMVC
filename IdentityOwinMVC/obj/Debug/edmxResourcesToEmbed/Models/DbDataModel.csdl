@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DbDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DbDataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="DbDataModel.Customer" />
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Type="String" Name="CustomerID" Nullable="false" annotation:StoreGeneratedPattern="None" FixedLength="true" MaxLength="5" Unicode="true" />
+    <Property Type="String" Name="CompanyName" FixedLength="false" Unicode="true" MaxLength="40" Nullable="false" />
+    <Property Type="String" Name="ContactName" FixedLength="false" MaxLength="30" Unicode="true" />
+    <Property Type="String" Name="ContactTitle" FixedLength="false" MaxLength="30" Unicode="true" />
+    <Property Type="String" Name="Address" FixedLength="false" MaxLength="60" Unicode="true" />
+    <Property Type="String" Name="City" FixedLength="false" MaxLength="15" Unicode="true" />
+    <Property Type="String" Name="Region" FixedLength="false" MaxLength="15" Unicode="true" />
+    <Property Type="String" Name="PostalCode" FixedLength="false" MaxLength="10" Unicode="true" />
+    <Property Type="String" Name="Country" FixedLength="false" MaxLength="15" Unicode="true" />
+    <Property Type="String" Name="Phone" FixedLength="false" MaxLength="24" Unicode="true" />
+    <Property Type="String" Name="Fax" FixedLength="false" MaxLength="24" Unicode="true" />
+  </EntityType>
+</Schema>
